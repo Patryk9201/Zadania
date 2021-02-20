@@ -1,12 +1,8 @@
-total = 0
 
 numbers = [1, 5, 2, 3, 1, 4, 5, 1, 2, 50, 42, 3, 4, 5, 6, 7, 8, 9, 2, 4, 65, 23, 5, 5]
 
-for element in range(5, 15):
-    total += numbers[element]
-
-print("Sum of first ten elements starting from element five: ", total)
-
+numbers_sum = sum(numbers[5:15])
+print("Sum of first ten elements starting from element five: ", numbers_sum)
 
 
 pot = []
@@ -15,6 +11,9 @@ for i in power_of_two:
     pot.append(2**i)
 print(pot)
 
+#List Comprehension
+pot_two = [2**i for i in power_of_two]
+print(pot_two)
 
 
 users = [
